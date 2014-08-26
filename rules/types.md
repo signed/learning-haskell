@@ -6,11 +6,10 @@ components of a type are roughly equal to fields in java
 * similar to enums
 
 
-    data TypeConstructor = ValueConstructor Int String
+      data TypeConstructor = ValueConstructor Int String
 multiple value constructors are separated by |
 
     data Boolean = True | False
-    
 # pattern matching
 
 * _ is the wildcard character
@@ -18,3 +17,6 @@ multiple value constructors are separated by |
 # Type aliases
 
     type Title = String
+# Maybe Type
+
+    data Maybe a = Nothing | Just a

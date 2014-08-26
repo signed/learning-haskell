@@ -3,7 +3,8 @@
 # lists with elements of type a
 - __elem__ Checks if an element is part of a list
 
-        3 `elem` [1,2,4,8]    
+        3 `elem` [1,2,4,8]
+- __notElem__ Checks if an element is not part of the list           
 - __isPrefixOf__
 
         "foo" `isPrefixOf` "foobar"
@@ -22,6 +23,15 @@
 - __++__ append on list to another
 - __concat__ joins a list of lists into a single list
 - __reverse__ reverses the content of a list
+- __all__ evaluate predicate for each element in the list
+- __any__ evaluate predicate until one matches else false
+- __take__ the first n elements of the list
+- __drop__ remove the first n elements of the list
+- __splitAt__ return a tuple of two lists (n elemnts, n+1 end)
+- __takeWhile__
+- __dropWhile__
+- __span__
+- __break__
 
 # lists with elements of type Boolean
 
