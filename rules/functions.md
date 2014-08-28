@@ -1,5 +1,8 @@
 # functions
 
+## trivia
+- Functions that take other functions as there parameter or return a function are called __higher order functions__
+
 ## infix
 If a function takes two or more arguments it can be uses as an infix function
 

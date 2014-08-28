@@ -20,3 +20,7 @@ safeInit :: [a] -> Maybe [a]
 
 safeInit []       = Nothing
 safeInit elements = Just(init elements)
+
+myMap :: (a -> b) -> [a] -> [b]
+myMap f (x:xs) = f x : myMap f xs
+myMap _ _      = []

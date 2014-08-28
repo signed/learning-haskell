@@ -32,6 +32,8 @@
 - __dropWhile__
 - __span__
 - __break__
+- __foldl__ aggregate from head to tail __DO NOT USE THIS__ use __Data.List.foldl'__  instead
+- __foldr__ aggregate from tail to head
 
 # lists with elements of type Boolean
 
