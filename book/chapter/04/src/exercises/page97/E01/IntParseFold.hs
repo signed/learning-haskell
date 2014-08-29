@@ -1,5 +1,6 @@
 import Data.Char(digitToInt) -- we'll need ord shortly
 import Data.List(foldl')
+
 asInt :: String -> Int
 
 

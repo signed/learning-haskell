@@ -1,3 +1,5 @@
+module Exercises.Page97.E02.IntParse (asInt_fold) where
+
 import Data.Char(digitToInt) -- we'll need ord shortly
 
 asInt_fold :: String -> Int

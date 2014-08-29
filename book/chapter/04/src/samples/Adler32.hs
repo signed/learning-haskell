@@ -1,4 +1,6 @@
 -- file: ch04/Adler32.hs
+module Samples.Adler32 where
+
 import Data.Char (ord)
 import Data.Bits (shiftL, (.&.), (.|.))
 
