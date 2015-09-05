@@ -12,3 +12,5 @@ A functions that only return valid results for a subset of the valid inputs
 
 ## total function
 a functions that returns valid results over its entire input domain
+
+functions always have one parameters. Functions with two parameters are just syntactic sugger
