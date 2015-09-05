@@ -1,4 +1,4 @@
-module Mainf where
+module Main where
 
 main :: IO ()
 main = putStrLn "hello world"
