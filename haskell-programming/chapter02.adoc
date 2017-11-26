@@ -1,0 +1,104 @@
+
+
+= GHCi REPL
+
+Start with `stack ghci`
+
+.Labeled
+Prelude::
+    Libraries that come as part of the haskell installation
+
+Declaring functions or variables requires `let` in the repl.
+
+Order of declaration matters.
+
+== Commands in the REPL
+Commands are prefixed by `:<command>`
+
+.Labeled
+
+reload or r::
+ reload from filesystem
+quite or q::
+ exit the REPL
+load or l::
+ load a haskell file into the repl
+
+
+
+= In a file
+
+Order of declaration does not matter
+
+
+= Syntax
+Indentation is important.
+Use spaces to indent your code not tabs.
+
+Line comments start with `--`
+
+Everything in haskell is an expression (functions, values, ...) or a declaration.
+Expressions are evaluated lazy.
+Values are irreducible.
+Applications of functions to arguments are reducible.
+
+.Labeled
+redexes::
+ An expression that can be reduced/evaluated to something else than itself
+
+== Functions
+.Bulleted
+* start with a lower case letter
+
+== Variables
+.Bulleted
+* start with a lower case letter
+
+== Types
+.Bulleted
+* start with an upper case letter
+
+== Modules
+.Bulleted
+* start with an upper case letter
+
+== defining functions
+Prefix form is default for functions
+
+[source,haskell]
+sayHello :: String -> IO ()
+sayHello x =
+  putStrLn ("Hello, " ++ x ++ "!")
+
+== infix operators
+[horizontal]
+.Labeled
+operator::
+ a function which can be used in infix style
+
+All Operators are functions, not all functions are operators.
+
+. Use prefix functions in infix notation
+[source,haskell]
+----
+div 6 4
+6 `div` 4
+----
+
+. Use infix functions in prefix notation
+[source,haskell]
+----
+10 + 5
+(+) 10 5
+----
+
+. The `$` operator to save parenthesis
+[source,haskell]
+----
+f$a=fa
+
+(2^) (2 + 2)
+(2^) $ 2 + 2
+----
+
+= Let and Where
