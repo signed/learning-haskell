@@ -10,11 +10,12 @@ https://gist.github.com/Dexyne/5791465
 
 
 = Stack
-`stack new learning-haskell new-template`
-`stack setup`
-`stack build`
-`stack test`
-`stack exec learning-haskell-exe`
+* `stack new learning-haskell new-template`
+* `stack setup`
+* `stack build`
+* `stack test`
+* `stack exec learning-haskell-exe`
+* `stack list-dependencies`
 
 stack ghci is the haskell shell to play around
 :q quits the shell
