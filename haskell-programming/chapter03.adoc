@@ -1,2 +1,29 @@
 
 = Strings
+
+String is a type alias for [Char], a list of characters.
+
+== Types
+
+The I/O type is uses when ever there are side effects
+
+== Functions on String
+
+[horizontal]
+.Labeled
+putStr:: print string to screen
+putStrLn:: print string to screen and append newline
+
+concat:: concatenate a list of lists into a list
+++:: concatenate two lists
+head:: returns the first element of a list
+tail:: returns the list withouth the first element
+!!:: return element at index ['a'] !! 0
+take:: take n first elements of a list
+drop:: drop the n first elements of a list, return what remains
+
+
+= Syntax
+[horizontal]
+.Labeled
+do:: syntax to sequence actions
