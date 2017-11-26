@@ -17,6 +17,9 @@ https://gist.github.com/Dexyne/5791465
 * `stack exec learning-haskell-exe`
 * `stack list-dependencies`
 
+* `stack build --pedantic --test --exec "echo Success" --file-watch`
+
+
 stack ghci is the haskell shell to play around
 :q quits the shell
 :cd path changes directory
