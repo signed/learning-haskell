@@ -4,13 +4,17 @@ http:// docs.haskellstack.org/en/stable/README/
 https://github.com/bitemyapp/learnhaskell
 https://www.stackage.org/package/base
 
-
-
-
 = First book
 installing haskell on ubuntu
 https://gist.github.com/Dexyne/5791465
 
+
+= Stack
+`stack new learning-haskell new-template`
+`stack setup`
+`stack build`
+`stack test`
+`stack exec learning-haskell-exe`
 
 stack ghci is the haskell shell to play around
 :q quits the shell
