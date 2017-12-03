@@ -1,7 +1,7 @@
 import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
-import Chapter04(changeMood, Mood(..), ownNot)
+import Chapter04(changeMood, Mood(..), ownNot, isPalindrome, myAbs, f)
 
 main :: IO ()
 main = hspec $
@@ -24,3 +24,17 @@ main = hspec $
 
     it "mood changes from " $
       changeMood Blah `shouldBe` Woot
+
+    it "ab is not a palindrom" $
+      isPalindrome "ab" `shouldBe` False
+    it "aba is a palindrom" $
+      isPalindrome "aba" `shouldBe` True
+    it "positive number stays positive" $
+      myAbs 42 `shouldBe` 42
+    it "negative number becomes positive" $
+      myAbs (-42) `shouldBe` 42
+    it "positive number stays positive" $
+      myAbs 0 `shouldBe` 0
+
+    it "positive number stays positive" $
+      f ((,) 'a' 'b') ((,) 'c' 'd') `shouldBe` (,) ((,) 'b' 'd') ((,) 'a' 'c')
