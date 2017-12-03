@@ -1,13 +1,4 @@
-module Chapter04 (
- Mood(..)
- ,changeMood
- ,ownNot
- ,allAwesome
- ,awesome
- ,isPalindrome
- ,myAbs
- ,f
-  ) where
+module Chapter04  where
 
 data Mood = Blah | Woot deriving (Show, Eq)
 
@@ -38,3 +29,10 @@ myAbs x = if x < 0 then negate x else x
 f :: (a, b) -> (c, d) -> ((b, d), (a, c))
 --f (a,b) (c,d) = ((b,d), (a,c))
 f one@(a,b) two@(c,d) =( (snd one, snd two), (fst one, fst two))
+
+-- function name F has to be lower case
+-- wrong syntax for infix invocation
+x = (+)
+lengthPlusOne :: String -> Int
+lengthPlusOne xs = w `x` 1
+                  where w = length xs

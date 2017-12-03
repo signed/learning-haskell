@@ -1,7 +1,7 @@
 import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
-import Chapter04(changeMood, Mood(..), ownNot, isPalindrome, myAbs, f)
+import Chapter04(changeMood, Mood(..), ownNot, isPalindrome, myAbs, f, lengthPlusOne)
 
 main :: IO ()
 main = hspec $
@@ -38,3 +38,6 @@ main = hspec $
 
     it "positive number stays positive" $
       f ((,) 'a' 'b') ((,) 'c' 'd') `shouldBe` (,) ((,) 'b' 'd') ((,) 'a' 'c')
+
+    it "length plus one" $
+        lengthPlusOne "12345" `shouldBe` 6
