@@ -10,3 +10,35 @@ Each type constructor` can have multiple `data constructors`.
 Was sind `sum types`, hängt mit | in data  types zusammen?
 
 Pattern matching
+
+= Numeric data types
+== Integral Numbers
+fixed precision vs. arbitrary large
+
+. Explicit cast 128 to type Int8
+[source:haskell]
+----
+import Data.Bits
+128::Int8
+----
+== Fractional numbers
+Use Scientific, avoid Float/Double unless you know the limitations
+
+= Comparing values
+
+.Labeled
+\\== :: equal
+/=:: un equal
+
+There are If-expressions, no if statements
+
+= Tuples
+
+tuple is a `product type`
+(,) 4 "4"
+
+= Lists
+
+arbitrary length
+only same type
+
