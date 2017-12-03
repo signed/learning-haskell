@@ -1,0 +1,12 @@
+
+= Basic datatypes
+
+expressions are reduced to values, every value has a type
+
+Type constructor starts with a capitalized letter.
+Each type constructor` can have multiple `data constructors`.
+`Data constructors` define the values in a type.
+
+Was sind `sum types`, hängt mit | in data  types zusammen?
+
+Pattern matching
