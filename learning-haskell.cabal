@@ -18,6 +18,7 @@ library
   exposed-modules:     Lib
                      , Chapter04
                      , Chapter05
+                     , Chapter05Sing
   build-depends:       base >= 4.7 && < 5
                      , text
                      , filepath

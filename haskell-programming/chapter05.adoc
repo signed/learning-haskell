@@ -1,2 +1,58 @@
 
 = Types
+
+There is a function type and (->) is its type constructor
+The function type has not data constructor
+Functions are values
+
+. Type Constraints
+[source:haskell]
+----
+( Ord a, Num a) => a -> a -> Ordering
+----
+
+== Exercise Type matching
+a -> c
+b -> d
+c -> b
+d -> a
+e -> e
+
+== Currying
+Haskell only allows functions with a single parameter.
+Functions with multiple parameters are syntactic sugar
+Haskell is curried by default
+You can un-curry an get a function that accepts a tuple according to the defined parameter count
+
+
+== Exercise 205 ?
+1 -> a
+2 -> d
+3 -> d
+4 -> c
+5 -> a
+6 -> e
+7 -> 7
+8 -> a
+9 -> c
+
+= Polymorphism
+
+polymorphic = made of many forms
+
+type signatures may have three kinds of types: concrete, con- strained polymorphic, or parametrically polymorphic.
+
+n Haskell, polymorphism divides into two categories: para- metric polymorphism and constrained polymorphism
+
+A subclass cannot override the methods of its superclass.
+
+= Type inference
+
+= Asserting types for declarations
+
+= Exercises
+== Multiple Choice S.225
+1 -> c
+2 -> a
+3 -> b
+4 -> c

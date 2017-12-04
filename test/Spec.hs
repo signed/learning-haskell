@@ -2,6 +2,7 @@ import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
 import Chapter04(changeMood, Mood(..), ownNot, isPalindrome, myAbs, f, lengthPlusOne)
+import Chapter05  as C5
 
 main :: IO ()
 main = hspec $
