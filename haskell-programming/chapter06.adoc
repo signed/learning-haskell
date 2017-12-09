@@ -1,0 +1,24 @@
+= Typeclasses
+
+== What are typeclasses
+
+
+A declaration of a type defines how that type in particular is created.
+A declaration of a typeclass defines how a setof types are consumed or used in computations.
+
+Typeclasses are like interfaces.
+
+? Typeclasses are a means of ad hoc polymorphism aka constrained polymorphism
+
+Data classes implement Typeclasses  (synonym for implements is instantiates)
+
+= Bool example
+
+Why not use the Read Typeclass
+
+= Eq
+The function type does not implement `Eq
+
+`Eq`, `Ord`, `Enum`, `Bounded`, `Read`, and `Show` we can derive without manually providing instance methods
+
+= Writing typeclass instances
