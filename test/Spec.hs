@@ -38,7 +38,7 @@ main = hspec $
       myAbs 0 `shouldBe` 0
 
     it "positive number stays positive" $
-      f ((,) 'a' 'b') ((,) 'c' 'd') `shouldBe` (,) ((,) 'b' 'd') ((,) 'a' 'c')
+      Chapter04.f ((,) 'a' 'b') ((,) 'c' 'd') `shouldBe` (,) ((,) 'b' 'd') ((,) 'a' 'c')
 
     it "length plus one" $
         lengthPlusOne "12345" `shouldBe` 6
