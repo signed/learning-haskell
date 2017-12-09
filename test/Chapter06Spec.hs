@@ -3,6 +3,8 @@ module Chapter06Spec where
 import Test.Hspec
 import Chapter06(TwoIntegers(..), EitherOr(..))
 
+type EitherOrTest = EitherOr String String
+
 spec :: Spec
 spec = do
   describe "Two Integers" $ do
@@ -20,16 +22,16 @@ spec = do
   describe "EitherOr" $ do
     context "Hello" $ do
       it "is equal if both arguments are equal" $
-        (Hello "one" :: EitherOr String String) `shouldBe` (Hello "one" :: EitherOr String String)
+        (Hello "one" :: EitherOrTest) `shouldBe` (Hello "one" :: EitherOrTest)
       it "is not equal if both arguments are not equal" $
-        (Hello "one" :: EitherOr String String) `shouldNotBe` (Hello "two" :: EitherOr String String)
+        (Hello "one" :: EitherOrTest) `shouldNotBe` (Hello "two" :: EitherOrTest)
 
     context "Goodbye" $ do
       it "is equal if both arguments are equal" $
-        (Goodbye "one" :: EitherOr String String) `shouldBe` (Goodbye "one" :: EitherOr String String)
+        (Goodbye "one" :: EitherOrTest) `shouldBe` (Goodbye "one" :: EitherOrTest)
       it "is not equal if both arguments are not equal" $
-        (Goodbye "one" :: EitherOr String String) `shouldNotBe` (Goodbye "two" :: EitherOr String String)
+        (Goodbye "one" :: EitherOrTest) `shouldNotBe` (Goodbye "two" :: EitherOrTest)
 
     it "Hello and Goodbye are never equal" $ do
       let recipient = "same"
-      (Hello recipient :: EitherOr String String) `shouldNotBe` (Goodbye recipient :: EitherOr String String)
+      (Hello recipient :: EitherOrTest) `shouldNotBe` (Goodbye recipient :: EitherOrTest)
