@@ -43,7 +43,13 @@ data TisAnInteger =
 instance Eq TisAnInteger where
   (==) (TisAn lhs) (TisAn rhs) = lhs == rhs
 
-data TwoIntegers =
-       Two Integer Integer deriving Show
+data TwoIntegers = Two Integer Integer deriving Show
 instance Eq TwoIntegers where
   Two lhs1 lhs2 == Two rhs1 rhs2 = lhs1 == rhs1 && lhs2 == rhs2
+
+data EitherOr a b = Hello a | Goodbye b deriving Show
+
+instance (Eq a, Eq b)=> Eq (EitherOr a b) where
+  (==) (Hello lhs) (Hello rhs) = lhs == rhs
+  (==) (Goodbye lhs) (Goodbye rhs) = lhs == rhs
+  (==) (Hello _ ) (Goodbye _ ) = False
