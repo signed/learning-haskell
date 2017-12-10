@@ -21,4 +21,39 @@ The function type does not implement `Eq
 
 `Eq`, `Ord`, `Enum`, `Bounded`, `Read`, and `Show` we can derive without manually providing instance methods
 
-= Writing typeclass instances
+= Num
+
+= Type-defaulting type classes
+
+= Ord
+
+`Eq` is a superclass of `Ord`
+
+[source,haskell]
+----
+class Eq a => Ord a where
+----
+
+= Enum
+= Show
+Printing and `side effect`
+
+= Read
+String can contain invalid input that we can not parse
+There are better and more robust ways to achieve this in Haskell
+
+= Instances are dispatched by type
+
+
+= Exercises
+== Multiple Choice
+1 -> c
+2 -> b
+3 -> a
+4 -> c
+5 -> a
+== Does it type check
+1 -> No because Person is no instance of Show
+2 -> No because is no instance of Eq
+3 -> Blah and Woot
+4 ->
