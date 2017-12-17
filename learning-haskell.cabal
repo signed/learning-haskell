@@ -20,6 +20,8 @@ library
                      , Chapter05
                      , Chapter05Sing
                      , Chapter06
+                     , Chapter07
+                     , Chapter08
   build-depends:       base >= 4.7 && < 5
                      , text
                      , filepath
