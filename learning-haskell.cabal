@@ -42,6 +42,8 @@ test-suite learning-haskell-test
   main-is:             Spec.hs
   Other-Modules:       AllTheFirstChaptersSpec
                      , Chapter06Spec
+                     , Chapter07Spec
+                     , Chapter08Spec
   build-depends:       base
                      , hspec
                      , hspec-discover

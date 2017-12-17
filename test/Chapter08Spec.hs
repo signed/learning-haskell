@@ -6,7 +6,7 @@ import Chapter08
 spec :: Spec
 spec =
   describe "Two Integers" $ do
-    it "is equal if both integers match" $
+    it "placeholder 1" $
       1 `shouldBe` 1
-    it "is not equal if the first integers do not match" $
-      2 `shouldNotBe` 2
+    it "placeholder 2" $
+      2 `shouldBe` 2

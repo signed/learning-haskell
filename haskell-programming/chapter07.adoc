@@ -1,4 +1,79 @@
 
 = More functional patterns
 
+== Make it func-y p 329
 
+== Arguments and parameter p 329
+A value that can be used as an argument is a first class value.
+
+p 334 Parameters can be bound with `in` and `where`
+shadowing and scope
+
+== Anonymous functions p 339
+
+. Declare an anonymous function
+[code:haskell]
+----
+(\x -> x * 3) :: Integer -> Integer
+----
+
+
+=== Exercise p 342
+1 a,b,c,d
+2 d
+
+Named and unnamed entities are evaluated a bit differently
+
+== Pattern Matching p 344
+
+Patterns are matched against data constructors not types (destructuring)
+
+Patterns are evaluated top down
+`_` is the universal pattern that never fails (catch all)
+
+=== Exercises p 359
+1 k :: (a,b) -> a
+2 k :: ([Char], Num) -> [Char] and no
+3 k3
+
+
+== Case Expressions p 360
+
+== Higher Order Functions p 365
+functions that accept other functions as arguments
+
+=== Exercise p 376
+
+
+== Guards  p 379
+
+. Defining a guard
+[code:haskell]
+----
+myAbs :: Integer -> Integer
+myAbs x
+ | negative  = (-x)
+ | otherwise =   x
+ where negativ = x < 0
+----
+
+Guards are evaluated top to bottom
+
+== Functional Composition p 387
+
+`(.)` is the composition operator for functions
+
+== Pointfree Style p392
+
+== Demonstrating composition
+
+== Chapter Exercise p 400
+
+=== Multiple Choice
+1 d
+2 b
+3 d
+4 b
+5 a
+
+== Chapter Definitions p 406
