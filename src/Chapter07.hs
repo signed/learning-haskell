@@ -74,7 +74,7 @@ g :: (a -> b) -> (a, c) -> (b, c)
 g aToB (a,c) = (aToB a, c)
 
 roundTrip :: (Show a, Read a) => a -> a
-roundTrip a = read.show $ a
+roundTrip = read.show
 
 roundTrip2 :: (Show a, Read b) => a -> b
-roundTrip2 a = read.show $ a
+roundTrip2 = read.show
