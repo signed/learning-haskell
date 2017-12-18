@@ -1,12 +1,18 @@
 module Chapter08Spec where
 
-import Test.Hspec
 import Chapter08
+import Test.Hspec
 
 spec :: Spec
 spec =
-  describe "Two Integers" $ do
-    it "placeholder 1" $
-      1 `shouldBe` 1
-    it "placeholder 2" $
-      2 `shouldBe` 2
+  describe "divide by" $ do
+    it "two possitive numbers" $
+      dividedBy 7 7 `shouldBe` Result (1, 0)
+    it "division by zero" $
+      dividedBy 7 0 `shouldBe` DividedByZero
+    it "negative denominator" $
+      dividedBy 7 (-7)  `shouldBe` Result (-1, 0)
+    it "negative quotient" $
+      dividedBy (-7) 7  `shouldBe` Result (-1, 0)
+    it "both negative" $
+      dividedBy (-7) (-7)  `shouldBe` Result (1, 0)

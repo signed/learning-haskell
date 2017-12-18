@@ -1,4 +1,27 @@
 
 = Recursion p 419
+Y Combinator
 
+== Bottom p 431
+computations that did not return a value return bottom
+
+== Fibonacci Numbers p 435
+
+== Integral division from scratch p 441
+p 445 Haskel idiom: go function defined in where clause with additional parameters needed for recursion
+
+== Chapter Exercise
+=== Review of Types
+1 d
+2 b
+3 d
+4 b
+=== Reviewing Currying
+//x ++ " mrow " ++ y
+
+1 "woops mrow woohoo!"
+2 String -> String
+3 skip the rest
+
+=== Recursion
 
