@@ -22,6 +22,18 @@ library
                      , Chapter06
                      , Chapter07
                      , Chapter08
+                     , Chapter09
+                     , Chapter10
+                     , Chapter11
+                     , Chapter12
+                     , Chapter13
+                     , Chapter14
+                     , Chapter15
+                     , Chapter16
+                     , Chapter17
+                     , Chapter18
+                     , Chapter19
+                     , Chapter20
   build-depends:       base >= 4.7 && < 5
                      , text
                      , filepath
@@ -44,6 +56,18 @@ test-suite learning-haskell-test
                      , Chapter06Spec
                      , Chapter07Spec
                      , Chapter08Spec
+                     , Chapter09Spec
+                     , Chapter10Spec
+                     , Chapter11Spec
+                     , Chapter12Spec
+                     , Chapter13Spec
+                     , Chapter14Spec
+                     , Chapter15Spec
+                     , Chapter16Spec
+                     , Chapter17Spec
+                     , Chapter18Spec
+                     , Chapter19Spec
+                     , Chapter20Spec
   build-depends:       base
                      , hspec
                      , hspec-discover
