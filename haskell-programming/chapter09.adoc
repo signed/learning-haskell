@@ -1,3 +1,20 @@
 
 = Lists p 457
 
+* List is a Sum type
+
+. How is list defined
+[code:haskell]
+----
+data [] a = [] | a : [a]
+----
+
+== Pattern matching on lists p 460
+
+== List's syntactic sugar p 464
+
+== List cpomprehensions p 477
+
+== Transforming lists of values p 500
+
+== Filtering lists of values p 511
