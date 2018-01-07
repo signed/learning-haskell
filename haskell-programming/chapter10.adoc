@@ -1,3 +1,14 @@
 
 = Folding Lists p 530
 
+== foldr
+p 541 can be used to fold infinite lists, if only some elements are needed
+
+== foldl p 548
+always evaluates the whole spine
+
+== how to write fold functions p 561
+
+== scans p 573
+
+
