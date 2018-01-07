@@ -1,3 +1,10 @@
 
 = Signaling adversity p 704
 
+smart constructors check their inputs and perform validation
+On fail return `Nothing`.
+
+p 723
+lifted types can inhabit bottom/undefined
+unlifetd type can not inhabit bottom/undefined
+
