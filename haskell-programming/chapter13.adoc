@@ -1,30 +1,3 @@
 
 = Building projects p 750
 
-* sum types
-* product types
-* product types with record syntax
-* type aliases
-* newtype
-
-== Data declarations review
-
-== Data any Type Constructors p594
-
-Type constants = TypeConstructor with zero parameters
-
-== Type constructors and kings p 597
-----
-:kind
-----
-
-== What's type and what's data p 605
-
-== Record Syntax p 635
-
-[code:haskell]
-----
-data Person = Person { name :: String,  age :: Int } deriving (Eq, Show)
-----
-
-== Binary tree p 681
