@@ -1,3 +1,12 @@
 
 = Building projects p 750
 
+== Modules
+
+:set prompt "Lambda> "
+
+
+The `do` syntax is syntactic sugar that can be used inside functions that return `IO`.
+This is done to sequence side effects.
+
+== do syntax and IO p 779
