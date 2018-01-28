@@ -1,3 +1,44 @@
 
 = Monoid Semigroup p 887
 
+
+
+== Monoids and Semigroups
+
+== What we talk about when we talk about algebras
+
+Algebra::
+  Some operations and the set they operate over.
+  In Haskell they can be implemented with +type classes+.
+
+== Monoid
+
+Monoids are about reducing or condensing values from the same set.
+
+Moinoid::
+  binary associative operation with an identity.
+  the binary operation must be  associative and it must have a sensible identity value
+  types that have binary functions that let you join things together in accordance with the laws of associa- tivity, along with an identity value that will return the other argument unmodified
+
+associativity::
+    arguments can be re-grouped (or re-parenthesies) in different order without changing the result
+=== Why Integer does not have a Monoid
+There are two functions that fulfill the required laws, `+` and `+`.
+But there can only be one implementation of the `Monoid` typeclass for any given type.
+
+This is solved by the `Sum` and `Product` +newtype+  where you can explicitly state what the Monoid function should be.
+
+=== laws p 903
+
+identity::
+    there are no identities without operations
+
+== Better living through quick check
+
+p927 ? Surprise! You can bind infix names for function arguments.
+
+= Semigroup
+
+semigroup::
+    monoid without identity
+
