@@ -56,3 +56,24 @@ type FirstMappend =
   -> Bool
 type FstId =
   First' String -> Bool
+
+newtype Mem s a = Mem {
+ runMem :: s -> (a,s) }
+
+instance Monoid a => Monoid (Mem s a) where
+ mempty = Mem $ \s -> (mempty, s)
+ mappend (Mem f) (Mem g) = Mem $ \s -> let (a1, s1) = f s
+                                           (a2, s2) = g s1
+                                       in (a1 <> a2, s2)
+
+
+f' = Mem $ \s -> ("hi", s + 1)
+g' = Mem $ \s -> (" world", s * 5)
+h' = Mem $ \s -> (" !", s + 2)
+
+main = do
+  print $ runMem (f' `mappend` (g' `mappend`h')) 5
+  print $ runMem ((f' `mappend` g') `mappend`h') 5
+  print $ runMem (mempty `mappend` h') 5
+  print $ runMem (h' `mappend` mempty) 5
+  print $ runMem h' 5

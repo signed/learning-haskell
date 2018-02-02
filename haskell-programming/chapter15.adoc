@@ -23,7 +23,7 @@ Moinoid::
 associativity::
     arguments can be re-grouped (or re-parenthesies) in different order without changing the result
 === Why Integer does not have a Monoid
-There are two functions that fulfill the required laws, `+` and `+`.
+There are two functions that fulfill the required laws, `+` and `*`.
 But there can only be one implementation of the `Monoid` typeclass for any given type.
 
 This is solved by the `Sum` and `Product` +newtype+  where you can explicitly state what the Monoid function should be.
