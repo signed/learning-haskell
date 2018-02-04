@@ -7,6 +7,7 @@ fmap as generalization to map over lists
 
 Functor::
     A functor is a way to apply a function over or around some structure that we don’t want to alter
+    Leave the outer structure untouched while transforming the type arguments inside.
 
 [source,haskell]
 .Functor.hs
@@ -39,3 +40,5 @@ Composition::
 
 (b->c)->(a->b)->a->c
 ((m -> n) -> f m -> f n) -> ((x -> y) -> g x -> g y) -> (x -> y) -> g x -> f n
+
+== Transforming the unapplied type argument
