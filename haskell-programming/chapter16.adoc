@@ -1,3 +1,41 @@
 
 = Functor p 957
 
+Functors are Combinators
+
+fmap as generalization to map over lists
+
+Functor::
+    A functor is a way to apply a function over or around some structure that we don’t want to alter
+
+[source,haskell]
+.Functor.hs
+----
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+----
+
+Or use the infix operator `<$>`
+
+== Laws
+
+Identity::
+    `fmap id == id`
+
+Composition::
+    `fmap(f.g) == fmap f . fmap g`
+
+
+
+
+== Exercises p 970
+1. *
+2. b * ; T * -> *
+3. * -> *
+
+
+== Commonly used Functors p 987
+
+
+(b->c)->(a->b)->a->c
+((m -> n) -> f m -> f n) -> ((x -> y) -> g x -> g y) -> (x -> y) -> g x -> f n
