@@ -67,5 +67,5 @@ dr = d 0
 
 e :: IO Integer
 e = let ioi = readIO "1" :: IO Integer
-        changed = fmap read (fmap ("123"++) (fmap show ioi))
+        changed = fmap (read . ("123" ++) . show) ioi
     in fmap (*3) changed
