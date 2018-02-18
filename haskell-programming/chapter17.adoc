@@ -1,3 +1,26 @@
 
 = Applicative p 1052
 
+Monoid::
+    Gives us means of mashing two values of the same type together
+
+Fuctor::
+    Is for function application over a structure we do not 
+
+== Functions in the applicative type class
+pure::
+    embedding a value of any type into structure
+
+1082 Constant type ???
+
+== Applicative Laws p 1106
+
+[source,haskell]
+.Applicatvie laws
+----
+pureid<*>v=v
+pure (.) <*> u <*> v <*> w = u <*> (v <*> w)
+pure f <*> pure x = pure (f x)
+u <*> pure y = pure ($ y) <*> u
+----
+

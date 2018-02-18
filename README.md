@@ -4,6 +4,8 @@ http:// docs.haskellstack.org/en/stable/README/
 https://github.com/bitemyapp/learnhaskell
 https://www.stackage.org/package/base
 
+https://github.com/data61/fp-course
+
 = First book
 installing haskell on ubuntu
 https://gist.github.com/Dexyne/5791465
